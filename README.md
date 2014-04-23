@@ -1,7 +1,9 @@
 # OmniAuth::WegoWise
 
 [OmniAuth](https://github.com/intridea/omniauth) strategy for the
-[WegoWise API](https://www.wegowise.com/api).
+[WegoWise API](https://www.wegowise.com/api). Using this gem in a WegoWise API
+client application allows you to easily authenticate users against the WegoWise
+OAuth API.
 
 ## Installation
 
@@ -36,5 +38,4 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :wegowise, ENV['CONSUMER_KEY'], ENV['CONSUMER_SECRET']
 end
 ```
-
 
